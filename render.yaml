@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: examopt
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node server.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
+      - key: AI_MODEL
+        value: openai/gpt-oss-120b

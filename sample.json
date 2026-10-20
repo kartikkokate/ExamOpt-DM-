@@ -1,0 +1,39 @@
+{
+  "subjects": [
+    {"id":"DM","name":"Discrete Mathematics"},
+    {"id":"DS","name":"Data Structures"},
+    {"id":"OOP","name":"Object Oriented Programming"},
+    {"id":"DBMS","name":"Database Management Systems"},
+    {"id":"COA","name":"Computer Organization"},
+    {"id":"ENG","name":"Communication Skills"},
+    {"id":"STAT","name":"Probability & Statistics"},
+    {"id":"EVS","name":"Environmental Studies"}
+  ],
+  "students": [
+    {"id":"S01","subjects":["DM","DS","OOP"]},
+    {"id":"S02","subjects":["DM","DBMS","COA"]},
+    {"id":"S03","subjects":["DS","DBMS","ENG"]},
+    {"id":"S04","subjects":["OOP","COA","STAT"]},
+    {"id":"S05","subjects":["ENG","STAT","EVS"]},
+    {"id":"S06","subjects":["DM","STAT"]},
+    {"id":"S07","subjects":["DS","COA"]},
+    {"id":"S08","subjects":["DBMS","EVS"]},
+    {"id":"S09","subjects":["OOP","ENG"]},
+    {"id":"S10","subjects":["COA","EVS"]},
+    {"id":"S11","subjects":["DM","DS"]},
+    {"id":"S12","subjects":["ENG","EVS"]}
+  ],
+  "rooms": [
+    {"id":"R101","capacity":6},
+    {"id":"R102","capacity":5},
+    {"id":"LAB1","capacity":4,"unavailable":["D1-AM"]}
+  ],
+  "slots": [
+    {"id":"D1-AM","label":"Day 1 · 09:00–12:00"},
+    {"id":"D1-PM","label":"Day 1 · 14:00–17:00"},
+    {"id":"D2-AM","label":"Day 2 · 09:00–12:00"},
+    {"id":"D2-PM","label":"Day 2 · 14:00–17:00"},
+    {"id":"D3-AM","label":"Day 3 · 09:00–12:00"},
+    {"id":"D3-PM","label":"Day 3 · 14:00–17:00"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "ai": "^7.0.143",
+    "three": "^0.186.1"
+  },
+  "name": "examopt",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node tests/engine.test.js && node tests/app.test.js && node tests/usability.test.js && node tests/assistant.test.js && node tests/voice.test.js && node tests/chat-voice.test.mjs && node tests/pet.test.mjs && node tests/server.test.mjs",
+    "build": "node build-pet.mjs && node vercel-build.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
